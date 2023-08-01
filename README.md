@@ -52,7 +52,7 @@ The two variables you must to modify are:
 1. Add the Auth Token and [Sendgrid API key](https://app.sendgrid.com/settings/api_keys) as Secrets, then create a Service Account to run the Cloud Functions and give it access to the Secrets:
 
    ```
-   SENDGRID_API_KEY="copy your sendgrid api key here"
+   SENDGRID_API_KEY="<INSERT SENDGRID API KEY>"
 
    printf ${SENDGRID_API_KEY} | gcloud secrets create SENDGRID_API_KEY --data-file=- --replication-policy=user-managed --locations=${REGION} --project=${PROJECT}
 

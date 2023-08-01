@@ -23,6 +23,7 @@ Use [Cloud Shell](https://cloud.google.com/shell) or the [`gcloud CLI`](https://
 
 The two variables you must to modify are:
 
+- `REGION` - Region you want to deploy the Cloud Functions to
 - `PROJECT` - ID you want to deploy the Cloud Functions to
 - `EMAIL_SENDER` - Email address of the sender
 
@@ -31,10 +32,9 @@ The two variables you must to modify are:
    ```
    ACTION_LABEL="Vertex AI"
    ACTION_NAME="vertex-ai"
-   REGION="us-central1"
-   PROJECT="my-project-id"
-   EMAIL_SENDER="my-sender-email-address@foo.com"
-
+   REGION="<GCP_REGION"
+   PROJECT="<GCP-PROJET-ID>"
+   EMAIL_SENDER="<EMAIL_ADDRESS>"
    ```
 
 1. Create a [.env.yaml](.env.yaml.example) with variables:

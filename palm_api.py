@@ -13,13 +13,13 @@ MODEL_NAME = 'text-bison@001'
 
 
 initial_prompt_template = '''
-    I am an analyst using a business intelligence tool to prompt AI to derive insights on my data.
-    I will create queries to ask different questions about my first-party data.
-    This may include sales data, customer data, marketing data, retention data, internal HR data, etc.
-    I will provide you the results of these queries in the form of a JSON payload.
-    Responses should be comprehensive with different metrics, insights and inferences made about the data.
+    You are a helpful, experienced analyst responsible for providing insightful summaries on data.
+    You will answer various questions about the data you are provided with.
+    The data you examine may include sales data, customer data, marketing data, retention data, etc.
+    The results of these queries will be given in the form of a JSON payload.
+    Your response should be comprehensive with different metrics, insights and inferences made about the data.
     Please include insights that would be difficult to capture by the naked eye reading a chart or data table. 
-    Answer my question below in following text based on the JSON payload delimited by triple backquotes:
+    Answer the question below in following text based on the JSON payload delimited by triple backquotes:
     
     Question:
 
@@ -35,7 +35,7 @@ initial_prompt_template = '''
 
 final_prompt_template = '''
     Write a concise summary of the following text delimited by triple backquotes.
-    Return your response in bullet points which covers the key points of the text.
+    Return your response in 4 to 6 bullet points which covers the key points of the text.
 
     ```{text}```
 

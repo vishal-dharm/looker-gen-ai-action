@@ -1,6 +1,6 @@
 ## Overview
 
-This repository provides an example of using the Looker Action API to trigger a Google Cloud Function and generate data-based insights using the [PaLM API (Vertex AI)](https://cloud.google.com/vertex-ai/docs/generative-ai/learn/models). With this action, users can take the results of an Explore query, specify their LLM parameters (temperature, top-k, top-p, and max_output_tokens), and email themselves the LLM-inspired insight into their data.
+This repository provides an example of using generative AI (PaLM API) to examine the results of a query and email you a summary of the results. This is done using the Looker Action API to trigger a Google Cloud Function and generate an explanation using the [PaLM API (Vertex AI)](https://cloud.google.com/vertex-ai/docs/generative-ai/learn/models). With this action, users can take the results of an Explore query, specify their LLM parameters (temperature, top-k, top-p, and max_output_tokens), and email themselves the LLM-inspired insight into their data.
 
 There are three Cloud Functions included in this demo that are used to communicate from Looker to Vertex AI via the [Action API](https://github.com/looker-open-source/actions/blob/master/docs/action_api.md):
 
